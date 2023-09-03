@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="./landingpage.css">
+</head>
+
+<body>
+    <header>
+        <div class="welcome-user">Welcome to the weather app</div>
+        <p id="curr-details">Here is your current location</p>
+        <div class="user-location">
+            <div class="lat-div add">Lat:<span id="lati">123456</span></div>
+            <div class="long-div add">Long:<span id="long">12345678</span></div>
+        </div>
+       
+    </header>
+    <main>
+        <iframe id="layout" src=""></iframe>
+    </main>
+    <footer>
+        <div class="your-data-text">YOur Weather Data</div>
+        <div class="your-data">
+            <div class="first-row footerinfo">
+                <div class="add info">Location: <span id="location">New Delhi</span></div>
+                <div class="add info">Wind Speed: <span id="windspeed">100kmph</span></div>
+                <div class="add info">Humidity: <span id="humidity">10</span></div>
+            </div>
+            <div class="second-row footerinfo">
+                <div class="add info">Time zone: <span id="timezone">GMT +5:30</span></div>
+                <div class="add info">Pressure: <span id="pressure">10atm</span></div>
+                <div class="add info">Wind Direction: <span id="direction">North West</span></div>
+            </div>
+            <div class="third-row footerinfo">
+                <div class="add info">Visibility: <span id="visibility">500</span></div>
+                <div class="add info">Feels like: <span id="feelslike">30</span></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./landingpage.js"></script>
+</body>
+
+</html>

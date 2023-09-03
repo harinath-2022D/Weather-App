@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #360369;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-home-div {
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+#fetch-data{
+    font-size: 24px;
+    padding: 20px;
+    color: white;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 50%;
+}
