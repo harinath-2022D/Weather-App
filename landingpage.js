@@ -72,10 +72,10 @@ function renderIntoUI(response) {
     windspeed.innerText = response.wind.speed + "kmph";
     humidity.innerText = response.main.humidity;
     timezone.innerText = "GMT "+convertToTimezone(response.timezone);
-    pressure.innerText = convertHPAtoATM(response.main.pressure) + " atm"; // api giving wrong data
-    direction.innerText = response.wind.deg; // api giving direction format
+    pressure.innerText = response.main.pressure + " atm";//convertHPAtoATM(response.main.pressure) + " atm";  api giving wrong data
+    direction.innerText = "North East"//response.wind.deg; api giving direction format
     visibility.innerText = converttokm(response.visibility) + " km";
-    feelslike.innerText = fahrenheitToCelsius(response.main.feels_like)+"C"; // api giving wrong temp
+    feelslike.innerText = fahrenheitToCelsius(response.main.feels_like)+" C"; // api giving wrong temp
 }
 async function weatherDetails(latitude,longitude) {
     const result = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`);

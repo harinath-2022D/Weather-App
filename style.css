@@ -25,3 +25,7 @@ body {
     border: none;
     border-radius: 50%;
 }
+
+#fetch-data:hover{
+    cursor: pointer;
+}
